@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>LDOS Linux Policy Dataset Explorer</title>
+<title>Linux Policy Dataset</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -491,7 +491,7 @@ function exportCSV(){
   }).join(','))].join('\n');
   const a=document.createElement('a');
   a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));
-  a.download='ldos_policies.csv';a.click();
+  a.download='linux_policies.csv';a.click();
 }
 
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDetail();});
